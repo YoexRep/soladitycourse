@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/SimpleStorage.sol": "SimpleStorage"
+			"contracts/ArrayStruct.sol": "ArrayS"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -72,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x8f36d2bdd0611f20cadd84d1d0a73c7fc9770675b2fcbab1a48c624afa5b5d10",
+		"contracts/ArrayStruct.sol": {
+			"keccak256": "0x14c310c3bca9e1a903baa75d9f537d2541b87195fd3ec2dfdb044045624d5e1a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0278ea1342554eaa22cfa042f256a079cbd366230bd8da819d5c9b21b95acb9",
-				"dweb:/ipfs/QmZsPfK73HpTtonZa5mp9NDViZPMNwQXXpdaZdc6nGZrsV"
+				"bzz-raw://41b60a4069b5d6b8d22c3bd8daf7fe978b026d7f8dcabc35a9f20a30069d2abc",
+				"dweb:/ipfs/QmRggLDp8a25EkipLtcXV3nzFXY9KieLkaRUyfqE3Uoz6A"
 			]
 		}
 	},
