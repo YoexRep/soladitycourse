@@ -26,6 +26,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumbre",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -94,11 +113,11 @@
 	},
 	"sources": {
 		"contracts/ArrayStruct.sol": {
-			"keccak256": "0xca6287fd4850e0f1b6631cdf6ce0f3e9225644ec9ac4afc6d15f073714e34d02",
+			"keccak256": "0x9fd2c6f053f3d79c8f94e439c1d6da1e655880869d8678e622a7889ddcb5f6de",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://2e4254c97aba14d57dee044f3bd2752919103994e8e7648293b99a8fe5ae2994",
-				"dweb:/ipfs/QmfQcc73mya7HzPvBadeF6HBKAzu2ymRSFFyH1jEF4VX68"
+				"bzz-raw://4af9a38d01f00966f9ea40b6305dc0c01b0f43db2b10fc0e06b6ce0bf55a8343",
+				"dweb:/ipfs/QmZUp3whtVGJT3Wc6P88aYSFgXceehAkzAk2WK3Ltqw3ir"
 			]
 		}
 	},

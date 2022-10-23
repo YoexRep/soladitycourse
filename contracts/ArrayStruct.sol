@@ -23,7 +23,16 @@ People[] public people;
 //La palabra clave memory, se usa porque el EVM necesita un lugar para guardar los parametros pasados
     function addPersona(string memory _name, uint256 _favoriteNumber) public{
         people.push(People(_favoriteNumber, _name));
+        nameToFavoriteNumbre[_name] = _favoriteNumber;
     }
+
+
+
+    //Mapping un array para hacer la busquedas mas facil, es un diccionario
+
+    mapping(string => uint256) public nameToFavoriteNumbre;
+
+
 
 
 
