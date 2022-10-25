@@ -6,6 +6,24 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPersona",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "favoriteNumber",
 				"outputs": [
@@ -13,6 +31,67 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumbre",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "people",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "person",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "favoriteNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -73,11 +152,11 @@
 	},
 	"sources": {
 		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x8f36d2bdd0611f20cadd84d1d0a73c7fc9770675b2fcbab1a48c624afa5b5d10",
+			"keccak256": "0x2901747713cd3b6e93568b8adfa1ab777911b501879cee85b056db24014b93a1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0278ea1342554eaa22cfa042f256a079cbd366230bd8da819d5c9b21b95acb9",
-				"dweb:/ipfs/QmZsPfK73HpTtonZa5mp9NDViZPMNwQXXpdaZdc6nGZrsV"
+				"bzz-raw://a86206b0c55922f3373146709a7fada2d4e18de83087f2d29b61c4669ac8ce66",
+				"dweb:/ipfs/QmTG8fw2HLuKy3gBsUJ2EhiYtXhPv35q4xRJdkfyRGjrze"
 			]
 		}
 	},

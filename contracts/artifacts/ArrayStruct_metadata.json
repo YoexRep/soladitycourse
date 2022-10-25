@@ -4,87 +4,7 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "_name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_favoriteNumber",
-						"type": "uint256"
-					}
-				],
-				"name": "addPersona",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"name": "nameToFavoriteNumbre",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "people",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "favoriteNumber",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "person",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "favoriteNumber",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			}
-		],
+		"abi": [],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -98,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/ArrayStruct.sol": "ArrayStruct"
+			"contracts/StorageFactory.sol": "ArrayStruct"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -112,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/ArrayStruct.sol": {
-			"keccak256": "0x9fd2c6f053f3d79c8f94e439c1d6da1e655880869d8678e622a7889ddcb5f6de",
+		"contracts/StorageFactory.sol": {
+			"keccak256": "0x814d2161d99a5a849be407d4031ac053ffc973f6ad968efab6a06ac1a888da2e",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4af9a38d01f00966f9ea40b6305dc0c01b0f43db2b10fc0e06b6ce0bf55a8343",
-				"dweb:/ipfs/QmZUp3whtVGJT3Wc6P88aYSFgXceehAkzAk2WK3Ltqw3ir"
+				"bzz-raw://bf359b0d9999b09c20d3f9e3f8e178ba758359eefe9d7ff55bce59b827327bc5",
+				"dweb:/ipfs/QmYZ7FM3bMYLSvQUYNCBHP59YhjtUivsvWDL2C98YUH6Pm"
 			]
 		}
 	},
