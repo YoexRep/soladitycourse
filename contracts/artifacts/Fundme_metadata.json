@@ -51,51 +51,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "ethAmount",
-						"type": "uint256"
-					}
-				],
-				"name": "getConversionRate",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getPrice",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getVersion",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "minimunUsd",
 				"outputs": [
@@ -106,6 +61,13 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -145,11 +107,19 @@
 			]
 		},
 		"contracts/FundMe.sol": {
-			"keccak256": "0x5f28e8b52892d3819245e7b075840f93738239c424da7c6cf8debd34a732e10d",
+			"keccak256": "0x6c294144b39f9b56956d7646be2d684506d1cf2acd373ecfa25444a68f1b9e70",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b0a6f467e56b8d5615bfbd651cc401aaa8713a44c7d37cb6179d32d8a4eb60b0",
-				"dweb:/ipfs/Qma5Jp3h2kvn4K5Cbq91EbrQ6SeU7GQJ9GKsxCbuU7Mm1g"
+				"bzz-raw://908cf0adf886474f54c03979cfcf1694706c7bfc068ada299dc9ed1cdc584bf9",
+				"dweb:/ipfs/Qmakz1iPe8HSBq7Ez7VdDqHBbHvrfMCT5BKU18HxB8crpH"
+			]
+		},
+		"contracts/PriceConverter.sol": {
+			"keccak256": "0xf05d506c105fb5dec26ed11b57a9c4d1fc128949f729e4787124f8b61f9f2274",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d454a042f27fede9dc8ecf51f09a2b60d33c362f6c9302c53653026c3799f731",
+				"dweb:/ipfs/QmXx7ozxDwP4RXeqtFUAhcyohkHbUqkmZjEs2WW9URG32V"
 			]
 		}
 	},
