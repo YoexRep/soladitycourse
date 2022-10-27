@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.7+commit.e28d00a7"
+		"version": "0.8.8+commit.dddeac2f"
 	},
 	"language": "Solidity",
 	"output": {
@@ -97,19 +97,19 @@
 	},
 	"sources": {
 		"contracts/SimpleStorage.sol": {
-			"keccak256": "0x2901747713cd3b6e93568b8adfa1ab777911b501879cee85b056db24014b93a1",
+			"keccak256": "0xdbbf47556953618b266d08642d508b036cb658b972bfaf15b37d85f5a40f84c5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a86206b0c55922f3373146709a7fada2d4e18de83087f2d29b61c4669ac8ce66",
-				"dweb:/ipfs/QmTG8fw2HLuKy3gBsUJ2EhiYtXhPv35q4xRJdkfyRGjrze"
+				"bzz-raw://e15735491363760678e3c1d6ae42245dc694e3c818550a14f59f60ee0c2a8649",
+				"dweb:/ipfs/QmU6Ufkedrp9nv8JjPdEhzdpcXoCtynnrAJv2C1raJMUq9"
 			]
 		},
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0x4c93667929de7ce8e7514e7098660a34f34a3582dbaa95068fb473aad3f3e74e",
+			"keccak256": "0xb5fe6c012371e7d4f14adb2e88e9043673a64b31ee47a7177204df2bdf68670d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0b8df1b21a1e3a33b2e4ea5deb130aec5236034329270c2e16c277f110953d9e",
-				"dweb:/ipfs/QmNqBXFFGsoURiPAVRUsWczdLc7dswJ4aFji7FAgNBi4CE"
+				"bzz-raw://ef8715160523f205277af1eabe96efb16f26a39ed8daf3520bbc1a49fd745f91",
+				"dweb:/ipfs/QmUkQ9AXSJA5B6im5J5QX9e9VqT35Sn9LpCAdtXqeXpGd5"
 			]
 		}
 	},

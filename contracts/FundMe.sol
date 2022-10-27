@@ -13,10 +13,12 @@ contract Fundme{
         //Le indico que voy a usar la liberia priceConverter para los tipos de datos uint256 es por eso que puedo usar las funciones en msg.value
      using PriceConverter  for uint256;
 
-              //Este valor se multiplica por 1e18 para que cuando compare con el retorno de la funcion getConversionRate esta pueda realmente comparar bien
-        uint256 public minimunUsd = 50 * 1e18; //1 * 10 **18
+              //Este valor se multiplica por 1e18 para agregar 18 ceros al numero indicado, y que se pueda dividir sin perder valor con los comas flotantes
+        uint256 public constant MINIMUM_USD = 50 * 1e18; //1 * 10 **18
 
-        //Array de donantes
+      
+      
+  //Array de donantes
        address[] public funders;
         
         //mapping para guardar cada direccion con la cantidad de dinero donando
@@ -30,7 +32,7 @@ contract Fundme{
             //require(getConversionRate(msg.value) >= minimunUsd, "Saldo insuficiente"); -- como se hacia antes de la libreria
 
             //Aqui ya no es necesario pasar la variable, ya que la data que pase es el objeto msg.value, seria lo mismo que hacer getConversionRate(msg.value);
-            require(msg.value.getConversionRate() >= minimunUsd, "Saldo insuficiente");
+            require(msg.value.getConversionRate() >= MINIMUM_USD, "Saldo insuficiente");
 
             //Hago un push en el array de los donadores
            funders.push(msg.sender);
@@ -41,8 +43,18 @@ contract Fundme{
 
         }
 
+            //Variable para guardar la direccion del creador del contrato, y de tipo imutable para gastar menos gas
+        address public  immutable i_owner;
 
-        function withdraw() public {
+        constructor(){
+            //Inicializo la variable owner 
+            i_owner = msg.sender;
+        }
+
+
+        function withdraw() public onlyOwner {
+
+               
 
                 for(uint256 funderIndex =0; funderIndex < funders.length; funderIndex ++){
                     address funder = funders[funderIndex];
@@ -58,12 +70,20 @@ contract Fundme{
 
 
 
+
+
+
+        }
+
+
+        modifier onlyOwner{
+            _;
+             //Le indico que que si la persona que esta enviando no es el dueño, no puede retirar los fondos 
+                require(msg.sender == i_owner, "Sender is not owner");
         }
 
      
       
-      
-
 
 
 }
