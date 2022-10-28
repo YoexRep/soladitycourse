@@ -75,11 +75,28 @@ contract Fundme{
 
         }
 
+//Son tipos de errores perzonalisados para ahorrar gas
+        error NotOwner();
+
 
         modifier onlyOwner{
             _;
              //Le indico que que si la persona que esta enviando no es el dueño, no puede retirar los fondos 
-                require(msg.sender == i_owner, "Sender is not owner");
+               
+                //require(msg.sender == i_owner, "Sender is not owner"); //Se puede usar de esta manera, o de la manera con el error perzonalizad NotOwner
+                if(msg.sender != i_owner){revert NotOwner();}
+        }
+
+
+        //Se ejecuta cuando no se indica un calldata, si falla invoca a fallback
+        receive() external payable{
+                fund();
+        }
+
+
+//Fallback se ejecuta aunque haya calldata, pero no lo encuentre, de esta manera un persona uqe envie dinero a nuestro contranto, si precionar la manera fund, sera redireccionado
+        fallback() external payable{
+            fund();
         }
 
      
